@@ -1,24 +1,17 @@
 package com.specification_demo.demo.entity;
 
-
-import org.hibernate.annotations.DynamicUpdate;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+
+
 
 /**
  * 
  * @author Mindbowser | pragati.gawade@mindbowser.com
  *
  */
-@Entity
-@Data
-@DynamicUpdate
-@EqualsAndHashCode(callSuper = false)
-@Table(name = "projects")
+@Document(collection = "projects")
 public class Project extends BaseEntity {
 
     @Column
