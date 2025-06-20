@@ -1,4 +1,4 @@
-package com.mongodb_integration.demo;
+package com.specification_demo.demo;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class MongodbIntegration {
+public class specification_demo {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MongodbIntegration.class, args);
+		SpringApplication.run(specification_demo.class, args);
 	}
 
 	@Bean
